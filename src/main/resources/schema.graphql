@@ -1,0 +1,24 @@
+schema {
+	query: Query
+	mutation: Mutation
+}
+
+type Query {
+  allDeliveries: [Deliveries]
+}
+
+type Mutation{
+	receiveDelivery(deliveryId: String): Deliveries
+}
+
+type Deliveries {
+  deliveryId: String
+  product: String
+  supplier: String
+  quantity: Int
+  expectedDate: String
+  expectedWarehouse: String
+  isReceived: Boolean
+}
+
+
