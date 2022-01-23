@@ -72,4 +72,4 @@ mutation receiveDelivery{
 }
 ```
 
-Whichever field you will pass will be returned in the response of execution of the query.
+Whichever field you will pass will be returned in the reponse of execution of the query.
